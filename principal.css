@@ -1,0 +1,595 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Krona One"
+}
+@media (min-width: 800px){
+body{
+    max-width: 100%;
+    /* esse abeçoado aqui que deixa os bloco alinhados */
+    display: block;
+    flex-direction: column;
+    height: 100vh;
+}
+/* CABEÇALHO ------------------------------------------------------------------*/
+#header{
+    background-color: #f1f1f1;
+    display: block;
+    flex-direction: row;
+    justify-content: space-between;
+	align-items: baseline;
+    max-width: 100%;
+}
+#header h1{
+    padding:1em;
+    margin-bottom: -2.5em;
+    margin-left: 3.5em;
+    box-sizing: border-box;
+}
+#nav{
+    display: flex;
+    text-align: right;
+    justify-content: right;
+    align-content: stretch;
+    margin: 0em 2em;
+}
+#menu{
+    display: flex;
+    margin-bottom: 4em;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	align-content: stretch;
+}
+li{
+    margin: 0em 1em 0em 2em;
+    text-decoration: none;
+}
+li a{
+    padding: 2.5em;
+    color: #647622;
+    text-decoration: none; 
+}
+li img{
+    width: 25px;
+}
+#btn_mobile{display: none;}
+#cardapio{display: none;}
+#user_mobile{display: none;}
+#cardapio{display: none;}
+#user-mobile{display: none;}
+/* PARTE PRINCIPAL ------------------------------------------------------------------*/
+main{
+    padding:6em;
+    background-color: #647622;
+    color: #f1f1f1;
+    box-sizing:border-box;
+    height: 700px;
+    margin: 0em auto;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+    align-content: stretch;
+}
+main p {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 2em;
+    animation: pulse 5s backwards;
+}
+.botao_cardapio{
+    background-color: #C09755;
+    padding: 1em 3em;
+    color: #f1f1f1;
+    border-radius: 0.8em;
+    box-shadow: 0 0 2em rgba(65, 64, 64,0.3);
+    animation: pulse 5s backwards;
+    text-decoration: none;
+}
+main .apresentacao{
+    margin:  0em 5em 5em;
+    width: 60%;
+    text-align: center;
+}
+main figure{
+    width: 40%;
+}
+figure img{
+    width: 80%;
+    margin-left:10%;
+    margin-bottom: 10;
+    animation: pulse 5s backwards;
+}
+/* FOOTER ------------------------------------------------------------------*/
+footer{
+    margin: 2px auto;
+    padding: 5em 15em;
+    font-size: 10px;
+    background-color: #647622;
+    color: #f1f1f1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: stretch;
+    
+    
+}
+footer a{
+    color: #f1f1f1;
+    background-color: #C09755;
+    border-radius: 50%;
+    padding: 1.5em 1.5em;
+}
+.location{
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: start;
+    align-content: stretch;
+    width: 60%;
+}
+footer section{
+    display: flex;
+}
+.contatos_gerais{
+    margin-left: 15%;
+}
+footer p,address{
+    margin: 0.4em 0.8em;
+}
+footer .contatos_gerais svg{
+    margin-top: 0.2em;
+}
+footer .location svg{
+    width: 4em;
+}
+footer img{
+    width: 100px;
+    margin-left:9em;
+
+}
+.navegadores:hover:hover{
+    box-shadow: 0 0 2em rgba(65, 64, 64,0.2);
+    border-radius: 2.5em;
+    background-color: #6476225b;
+    transition:  background-color 0.8s;
+}
+.contatos_gerais a:hover{
+    background-color: rgb(148, 117, 68);
+    transition: background-color 1s;
+}
+.botao_cardapio:hover{
+    box-shadow: 0 0 2em rgba(65, 64, 64,0.5);
+    background-color:#f1f1f1;
+    color: #647622;
+    transform: scale(2.2);
+    transition:  background-color 1s, color 1s;
+}
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.02);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+/* AREA DO USUARIO ------------------------------------------------------------------*/
+.login{
+    background-color: #FFFFFF;
+    padding: 1em;
+    border-radius: 19px;
+    color: #647622;
+    margin: 2em; 
+    text-align: center;
+    box-shadow: 0 0 3em rgb(65, 64, 64);
+    width: 480px;
+    height: 480px;
+}
+.login h2{
+    margin: 0em auto;
+    margin-top: 1em;
+    font-size: 35px;
+    margin-bottom: 2em; 
+    text-align: center;
+    border-bottom: 4px solid #C09755;
+    width: 120px;
+    text-align: center;
+    
+}
+.dados{
+    margin-bottom:1em;
+    padding: 1em;
+    width: 370px;
+}
+input[type=submit]{
+    width: 255px;
+    height: 46px;
+    border: none;
+    border-radius: 1em;
+    margin-top: 5em;
+    background-color: #647622;
+    color: #f1f1f1;
+    box-shadow: 0 0 1em #4e5c1c98;
+}
+.login a{
+    margin-left: -25em;
+    font-size: 10px;
+    color: #647622;
+    font-weight: bold;
+}
+.login a:hover{
+    color: #4e5c1c;
+}
+input[type=submit]:hover{
+    background-color: #4e5c1c;
+    transform: scale(1.1);
+    transition:  background-color 1s;
+}
+.login .nao-cliente{
+    text-align: center;
+    margin: 0em auto;
+}
+input[type = name],input[type = email], input[type = password]{
+    border-radius: 1em;
+    border-radius: 1.05em;
+    border: 2px solid #B3B3B3;
+    font-size: 12px;
+    color: #6e6e6e;
+    margin-bottom: 6px;
+    padding: 1.5em;
+}
+/* AREA DE CADASRTO (AINDA NAO SOU CLIENTE) */
+.cadastro h2{
+    margin: 1em auto;
+    margin-top: 0em;
+    font-size: 17px;
+    margin-bottom: 2em; 
+    text-align: center;
+    border-bottom: 4px solid #C09755;
+    width: 210px;
+    text-align: center; 
+}
+.cadastro{
+    background-color: #FFFFFF;
+    padding: 4em;
+    border-radius: 19px;
+    color: #647622;
+    margin: 2em; 
+    text-align: center;
+    box-shadow: 0 0 3em rgb(65, 64, 64);
+    display: block;
+}
+select{
+    border-radius: 1.05em;
+    width: 412px;
+    height: 50px;
+    border: 2px solid #B3B3B3;
+    font-size: 12px;
+    color: #6e6e6e;
+    margin-bottom: 8px;
+}
+input[type=tel]{
+    border-radius: 1.05em;
+    width: 394px;
+    height: 43px;
+    border: 2px solid #B3B3B3;
+    font-size: 12px;
+    color: #6e6e6e;
+    margin-bottom: 6px;
+}
+input[type=tel]{
+    padding: 0.5em;
+}
+}
+  #btn-mobile {display: none;}
+/* MOBILE____________________________________________________________________ */
+/* -------------------------------------------------------------------------- */
+
+@media (max-width: 800px){
+    *{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+        font-family: "Krona One"
+    }
+    footer{display: none;}
+    header{display: none;}
+    
+    body{
+        max-width: 100%;
+        display: block;
+        flex-direction: column;
+    }
+    /* CABEÇALHO_______________________________________________________________ */
+    header{
+        display: flex;
+        flex-direction: row;
+        background-color: #f1f1f1;
+        padding: 2em;
+        align-items: center;
+        justify-content: space-between;
+        align-content: center;
+    }
+    #nav{
+        margin-left: -1em;
+    }
+    header h1{
+        margin: 0em auto;
+        order: 2;
+    }
+    ul{
+        color: #647622;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        justify-content: space-between;
+    }
+    li a{
+        color: #4e5c1c;     
+    }
+    /* MAIN___________________________________________________________________ */
+    main p {
+        font-size: 15px;
+        text-align: center;
+        margin-bottom: 2em;
+        animation: pulse 5s backwards;
+    }
+    main{
+        box-sizing: border-box;
+        padding: 6em 1em;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #647622;
+        height: 88vh;  
+        color: #f1f1f1;
+        box-sizing: border-box;
+    }
+    #guarasgrande{
+        margin-top: -5em;
+        width: 300px;
+        animation: pulse 5s backwards;
+    }
+    .botao_cardapio{
+        background-color: #C09755;
+        color: #f1f1f1;
+        border-radius: 1em;
+        margin-top: 2em;
+        text-decoration: none;
+        padding: 1em 2em;
+        border-radius: 0.8em;
+        box-shadow: 0 0 2em rgba(65, 64, 64,0.3);
+        animation: pulse 5s backwards;
+        font-size: 14px;
+    }
+    .botao_cardapio:hover{
+        box-shadow: 0 0 2em rgba(65, 64, 64,0.5);
+        background-color:#f1f1f1;
+        color: #647622;
+        transform: scale(2.2);
+        transition:  background-color 1s, color 1s;
+    }
+    #hamburger:hover{
+        transform: scale(1.1);
+    }
+    @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.02);
+        }
+        100% {
+          transform: scale(1);
+        }
+    }
+   /* MENU SANDUICHE _________________________________________________________*/
+   #cardapio{display: none;}
+   #hamburger:hover{
+    transform: scale(1.1);
+}
+#user-mobile:hover{
+    transform: scale(1.1);
+}
+#header{
+    box-sizing: border-box;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #e7e7e7;
+}
+#menu a {
+    display: block;
+    padding: 0.5rem;
+}
+li a {
+    color: #647622;
+    text-decoration: none;
+} 
+.navegadores:hover {
+    background: rgba(0, 0, 0, 0.05);
+} 
+#menu {
+    margin-top: 3em;
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    gap: 0.5rem;
+    right: 0px;
+    background: #e7e7e7;
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+}
+#nav.active #menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+}
+#menu a {
+    padding: 1rem 0;
+    margin: 0em 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+}
+#btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+}
+#hamburger {
+    border-top: 2px solid;
+    width: 20px;
+}
+#hamburger::after,
+#hamburger::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+}
+#nav.active #hamburger {
+border-top-color: transparent;
+}
+#nav.active #hamburger::before {
+transform: rotate(135deg);
+}
+#nav.active #hamburger::after {
+transform: rotate(-135deg);
+top: -7px;
+}
+#menu #user{display: none;}
+#user-mobile{
+order: 3;
+}
+/* AREA LOGIN MOBILE */
+.login{
+    background-color: #FFFFFF;
+    padding: 1em;
+    border-radius: 19px;
+    color: #647622;
+    text-align: center;
+    box-shadow: 0 0 3em rgb(65, 64, 64);
+    width: 300px;
+    height: 400px;
+
+}
+.login h2{
+    margin: 0em auto;
+    margin-top: 1em;
+    font-size: 35px;
+    margin-bottom: 1em; 
+    text-align: center;
+    border-bottom: 4px solid #C09755;
+    width: 120px;
+    text-align: center;   
+}
+.dados{
+    margin-bottom:0.8em;
+    padding: 1em;
+    width: 370px;
+}
+input[type=submit]{
+    width: 230px;
+    height: 40px;
+    border: none;
+    border-radius: 1em;
+    margin-top: 2em;
+    background-color: #647622;
+    color: #f1f1f1;
+    box-shadow: 0 0 1em #4e5c1c98;
+}
+.login a{
+    margin-left: -14em;
+    font-size: 10px;
+    color: #647622;
+    font-weight: bold;
+}
+.login a:hover{
+    color: #4e5c1c;
+}
+input[type=submit]:hover{
+    background-color: #4e5c1c;
+    transform: scale(1.1);
+    transition:  background-color 1s;
+}
+.login .nao-cliente{
+    text-align: center;
+    margin: -5em auto;
+}
+input[type = email], input[type = password],input[type = name]{
+    border-radius: 1em;
+    width: 255px;
+    height: 20px;
+    border: 2px solid #B3B3B3;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+/* AREA DE CADASRTO (AINDA NAO SOU CLIENTE) */
+.cadastro h2{
+    margin: 0em auto;
+    margin-top: 1em;
+    font-size: 17px;
+    margin-bottom: 1em; 
+    text-align: center;
+    border-bottom: 4px solid #C09755;
+    width: 210px;
+    text-align: center; 
+}
+.cadastro{
+    background-color: #FFFFFF;
+    padding: 1em;
+    border-radius: 19px;
+    color: #647622;
+    margin: 2em; 
+    text-align: center;
+    box-shadow: 0 0 3em rgb(65, 64, 64);
+    width: 300px;
+    height: 450px;
+    display: block;
+}
+select{
+    border-radius: 1.05em;
+    width: 284px;
+    height: 48px;
+    border: 2px solid #B3B3B3;
+    font-size: 12px;
+    color: #6e6e6e;
+    margin-bottom: 8px;
+}
+input[type=tel]{
+    border-radius: 1.05em;
+    width: 281px;
+    height: 45px;
+    border: 2px solid #B3B3B3;
+    font-size: 12px;
+    color: #6e6e6e;
+    margin-bottom: 6px;
+}
+}
