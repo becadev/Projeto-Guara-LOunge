@@ -1,6 +1,11 @@
-## 📂 About the project:
-> This project consists of developing a website for the company GuaraLounge, located in Parnamirim, Rio Grande do Norte.
-> Since it's my first project, it may not yet have the level of excellence I aim for, but I plan to improve it over time.
-> My future goal is to use this as a foundation to create a shopping app for the same company, offering a more complete and integrated solution.
+## 📂 Sobre o projeto:
+> Este projeto tem como objetivo desenvolver um site para a empresa GuaraLounge, situada em Parnamirim, Rio Grande do Norte.
 
-#### Link to view the website: https://becadev.github.io/Projeto-Guara-LOunge/index.html
+> Por ser o meu primeiro projeto, ele pode não alcançar, de início, o nível de excelência que desejo, mas meu compromisso é aprimorá-lo progressivamente. Em um futuro próximo, minha meta é transformar esta iniciativa em uma base sólida para o desenvolvimento de um aplicativo de compras para a GuaraLounge, proporcionando uma solução mais completa e integrada para a empresa.
+
+### Ferramentas utilizadas:
+• HTML5;
+• CSS;
+• Javascript.
+
+#### Link para visualizar o Website: https://becadev.github.io/Projeto-Guara-LOunge/index.html
