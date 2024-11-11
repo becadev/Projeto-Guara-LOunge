@@ -7,7 +7,7 @@
 
 
 
-### Ferramentas utilizadas:
+### 💻 Tecnologias utilizadas:
 • HTML5; <br>
 • CSS; <br>
 • Javascript. <br>
