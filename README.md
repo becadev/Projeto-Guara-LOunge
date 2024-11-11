@@ -8,8 +8,8 @@
 
 
 ### Ferramentas utilizadas:
-• HTML5;
-• CSS;
-• Javascript.
+• HTML5; <br>
+• CSS; <br>
+• Javascript. <br>
 
 #### Link para visualizar o Website: https://becadev.github.io/Projeto-Guara-LOunge/index.html
